@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ticky Robot</title>
     <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika:300,600">
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
 </head>
 
@@ -23,14 +24,13 @@
     </header>
     <main id="home">
         <div id="bot-image">
-            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDggNTA4IgogIHdpZHRoPSI0MDBweCIgaGVpZ2h0PSI0MDBweCI+CiAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZEMDVCOyIgY3g9IjI1NCIgY3k9IjI1NCIgcj0iMjU0IiAvPgogIDxwYXRoIHN0eWxlPSJmaWxsOiNGOUI1NEM7IiBkPSJNOTAuOCw0NDguOEMxMzQuOCw0ODYsMTkxLjYsNTA4LDI1NCw1MDhzMTE4LjgtMjIuNCwxNjMuMi01OS4ySDkwLjh6IiAvPgogIDxnPgogICAgPHBvbHlnb24gc3R5bGU9ImZpbGw6IzMyNEE1RTsiIHBvaW50cz0iMjQxLjIsMTM2LjggMjM0LDE3Ny42IDI3NCwxNzcuNiAyNjYuOCwxMzYuOCIgLz4KICAgIDxwb2x5Z29uIHN0eWxlPSJmaWxsOiMzMjRBNUU7IiBwb2ludHM9IjI4OCwzMDAuNCAyNzYsMzAyIDI2OCwyNzIgMjc4LDI3MC44IiAvPgogICAgPHBvbHlnb24gc3R5bGU9ImZpbGw6IzMyNEE1RTsiIHBvaW50cz0iMjIwLDMwMC40IDIzMiwzMDIgMjQwLDI3MiAyMzAsMjcwLjgiIC8+CiAgICA8cmVjdCB4PSIyNzUuNiIgeT0iNDIyLjQiIHN0eWxlPSJmaWxsOiMzMjRBNUU7IiB3aWR0aD0iMjUuNiIgaGVpZ2h0PSIxOC40IiAvPgogIDwvZz4KICA8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTMxMCw0NDcuMmMtMC40LTQuNC0yLjgtNy42LTUuNi03LjZoLTMyYy0yLjgsMC01LjIsMy4yLTUuNiw3LjZIMzEweiIgLz4KICA8cmVjdCB4PSIyMDYuOCIgeT0iNDIyLjQiIHN0eWxlPSJmaWxsOiMzMjRBNUU7IiB3aWR0aD0iMjUuNiIgaGVpZ2h0PSIxOC40IiAvPgogIDxnPgogICAgPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yNDEuNiw0NDcuMmMtMC40LTQuNC0yLjgtNy42LTUuNi03LjZoLTMyYy0yLjgsMC01LjIsMy4yLTUuNiw3LjZIMjQxLjZ6IiAvPgogICAgPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0xOTcuNiwzOTUuMmMwLDM5LjIsMTkuNiwzNi40LDI4LjQsMzYuNGM4LjgsMCwxNiwyLjgsMTYtMzYuNHMtNy4yLTEwNC44LTE2LTEwNC44CiAgICBDMjE2LjgsMjkwLjQsMTk3LjYsMzU2LjQsMTk3LjYsMzk1LjJ6IiAvPgogICAgPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0zMTAuNCwzOTUuMmMwLDM5LjItMTkuNiwzNi40LTI4LjQsMzYuNHMtMTYsMi44LTE2LTM2LjRzNy4yLTEwNC44LDE2LTEwNC44CiAgICBDMjkxLjIsMjkwLjQsMzEwLjQsMzU2LjQsMzEwLjQsMzk1LjJ6IiAvPgogIDwvZz4KICA8ZyBjbGFzcz0iaGVhZCI+CiAgICA8cGF0aCBpZD0iU1ZHQ2xlYW5lcklkXzAiIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzMzLjYsNjEuMmMtMTAuOC0wLjgtMjEuMiwyLTI5LjYsNy4yYy0xNCw4LjQtMjkuNiwxMy4yLTQ1LjYsMTMuMmgtOC44CiAgICAgIGMtMTYsMC0zMi00LjgtNDUuNi0xMy4yYy04LjQtNS4yLTE4LjgtOC0yOS42LTcuMmMtMjQuOCwxLjYtNDUuMiwyMi00Ni44LDQ2LjhjLTIsMjkuMiwyMS4yLDU0LDUwLjQsNTRjOS42LDAsMTguOC0yLjgsMjYuNC03LjYKICAgICAgYzE0LTguOCwzMC40LTEzLjIsNDYuOC0xMy4yaDYuNGMxNi40LDAsMzIuOCw0LjQsNDYuOCwxMy4yYzcuNiw0LjgsMTYuOCw3LjYsMjYuNCw3LjZjMjkuMiwwLDUyLjQtMjQuNCw1MC40LTU0CiAgICAgIEMzNzguOCw4Mi44LDM1OC40LDYyLjgsMzMzLjYsNjEuMnoiIC8+CiAgICA8cGF0aCBpZD0iU1ZHQ2xlYW5lcklkXzBfMV8iIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzMzLjYsNjEuMmMtMTAuOC0wLjgtMjEuMiwyLTI5LjYsNy4yYy0xNCw4LjQtMjkuNiwxMy4yLTQ1LjYsMTMuMmgtOC44CiAgICAgIGMtMTYsMC0zMi00LjgtNDUuNi0xMy4yYy04LjQtNS4yLTE4LjgtOC0yOS42LTcuMmMtMjQuOCwxLjYtNDUuMiwyMi00Ni44LDQ2LjhjLTIsMjkuMiwyMS4yLDU0LDUwLjQsNTRjOS42LDAsMTguOC0yLjgsMjYuNC03LjYKICAgICAgYzE0LTguOCwzMC40LTEzLjIsNDYuOC0xMy4yaDYuNGMxNi40LDAsMzIuOCw0LjQsNDYuOCwxMy4yYzcuNiw0LjgsMTYuOCw3LjYsMjYuNCw3LjZjMjkuMiwwLDUyLjQtMjQuNCw1MC40LTU0CiAgICAgIEMzNzguOCw4Mi44LDM1OC40LDYyLjgsMzMzLjYsNjEuMnoiIC8+CiAgICA8Zz4KICAgICAgPHBhdGggc3R5bGU9ImZpbGw6Izg0REJGRjsiIGQ9Ik0zMzAsMTUxLjJjLTIyLDAtNDAtMTgtNDAtNDBzMTgtNDAsNDAtNDBzNDAsMTgsNDAsNDBTMzUyLDE1MS4yLDMzMCwxNTEuMnoiIC8+CiAgICAgIDxwYXRoIHN0eWxlPSJmaWxsOiM4NERCRkY7IiBkPSJNMTc4LDE1MS4yYy0yMiwwLTQwLTE4LTQwLTQwczE4LTQwLDQwLTQwczQwLDE4LDQwLDQwQzIxNy42LDEzMy4yLDE5OS42LDE1MS4yLDE3OCwxNTEuMnoiIC8+CiAgICA8L2c+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojNTRDMEVCOyIgZD0iTTMzMCwxMzQuOGMtMTIuOCwwLTIzLjYtMTAuNC0yMy42LTIzLjZzMTAuNC0yMy42LDIzLjYtMjMuNmMxMi44LDAsMjMuNiwxMC40LDIzLjYsMjMuNgogICAgUzM0My4yLDEzNC44LDMzMCwxMzQuOHoiIC8+CiAgICA8Zz4KICAgICAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZGRkZGOyIgY3g9IjMyMS42IiBjeT0iOTcuMiIgcj0iMTEuMiIgLz4KICAgICAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZGRkZGOyIgY3g9IjM0MC40IiBjeT0iMTI4LjQiIHI9IjYuNCIgLz4KICAgIDwvZz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiM1NEMwRUI7IiBkPSJNMTc4LDEzNC44Yy0xMi44LDAtMjMuNi0xMC40LTIzLjYtMjMuNnMxMC40LTIzLjYsMjMuNi0yMy42YzEyLjgsMCwyMy42LDEwLjQsMjMuNiwyMy42CiAgICBTMTkwLjgsMTM0LjgsMTc4LDEzNC44eiIgLz4KICAgIDxnPgogICAgICA8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBjeD0iMTY5LjIiIGN5PSI5Ny4yIiByPSIxMS4yIiAvPgogICAgICA8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBjeD0iMTg4IiBjeT0iMTI4LjQiIHI9IjYuNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPGc+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojMzI0QTVFOyIgZD0iTTMwNS4yLDIyMC40YzIuOCw3LjYsNy4yLDE2LjQsMTIuOCwyNS4yYzE0LjgsMjIuOCwzMi44LDM3LjIsNDAsMzIuNHMxLjItMjcuMi0xMy4yLTQ5LjYKICAgIGMtNS42LTguOC0xMi0xNi40LTE3LjYtMjJMMzA1LjIsMjIwLjR6IiAvPgogICAgPHBhdGggc3R5bGU9ImZpbGw6IzMyNEE1RTsiIGQ9Ik0zNjQuOCwzMTIuNGMwLDAsNi44LDE3LjYtNS4yLDQzLjZjLTAuOCwyLTMuMiwzLjItNS42LDMuMmwwLDBjLTMuNi0wLjQtNS42LTQtNC44LTcuMgogICAgYzEuNi00LjgsMy4yLTEyLDMuMi0xOC40YzAtNi03LjYtOC44LTExLjYtNC40Yy0xLjYsMS42LTIuOCw0LTMuNiw2LjhjLTAuOCwyLjgtNCw0LTYuNCwzLjJsMCwwYy0yLjgtMC44LTQuNC00LTMuMi02LjgKICAgIEMzMzEuNiwzMjEuNiwzNDIuOCwzMDAuNCwzNjQuOCwzMTIuNHoiIC8+CiAgPC9nPgogIDxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzc2LDMyMS42YzAsOS42LTIuNCwxNi40LTYsMjAuNGMtOS42LTE4LjgtMjcuNi0yNi40LTM4LTI5LjZjMS4yLTguOCwzLjYtMTgsNy4yLTI0LjggYy0yLTMuNi0zLjItNy42LTQtMTIuNGMxNy42LTguOCwyNS4yLTE3LjYsMjguOC0yNGMzLjIsNC44LDUuMiwxMS42LDUuMiwxOC44YzAsNS4yLTAuOCwxMC0yLjQsMTRDMzcyLjQsMjkzLjYsMzc2LDMwOS4yLDM3NiwzMjEuNiB6IgogIC8+CiAgPGc+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojMzI0QTVFOyIgZD0iTTIwMi44LDIyMC40Yy0yLjgsNy42LTcuMiwxNi40LTEyLjgsMjUuMmMtMTQuOCwyMi44LTMyLjgsMzcuMi00MCwzMi40cy0xLjItMjcuMiwxMy4yLTQ5LjYKICAgIGM1LjYtOC44LDEyLTE2LjQsMTcuNi0yMkwyMDIuOCwyMjAuNHoiIC8+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojMzI0QTVFOyIgZD0iTTE3Ny4yLDMzOS4yYy0yLjgsMC44LTUuNi0wLjQtNi40LTMuMmMtMC44LTIuOC0yLjQtNS4yLTMuNi02LjhjLTQtNC44LTExLjItMi0xMS42LDQuNAogICAgYzAsNi40LDEuNiwxMy42LDMuMiwxOC40YzAsMC40LDEuNiw2LTQuOCw3LjJjLTIuNCwwLjQtNC40LTAuOC01LjYtMy4yYy0zLjYtNy42LTUuNi0xNC44LTYuNC0yMC40YzgtMTAuOCwxOC44LTE3LjIsMjcuNi0yMC44CiAgICBjNS42LDUuMiw5LjIsMTIuNCwxMS4yLDE3LjZDMTgwLjgsMzMyLjgsMTgyLDMzNy42LDE3Ny4yLDMzOS4yeiIgLz4KICA8L2c+CiAgPGc+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTEzMiwzMjEuNmMwLDkuNiwyLjQsMTYuNCw2LDIwLjRjOS42LTE4LjgsMjcuNi0yNi40LDM4LTI5LjZjLTEuMi04LjgtMy42LTE4LTcuMi0yNC44CiAgICBjMi0zLjYsMy4yLTcuNiw0LTEyLjRjLTE3LjYtOC44LTI1LjItMTcuNi0yOC44LTI0Yy0zLjIsNC44LTUuMiwxMS42LTUuMiwxOC44YzAsNS4yLDAuOCwxMCwyLjQsMTQKICAgIEMxMzUuNiwyOTMuNiwxMzIsMzA5LjIsMTMyLDMyMS42eiIgLz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzE0LDE4OGMtNC40LDAtOC44LDEuMi0xMi40LDMuMmMtNC40LTEwLTEzLjItMTYuOC0yNC0xNi44aC00Ny4yYy0xMC44LDAtMTkuNiw3LjItMjQsMTYuOAogICAgYy0zLjYtMi04LTMuMi0xMi40LTMuMmMtMTQsMC0yNS42LDExLjYtMjUuNiwyNS42czExLjYsMjUuNiwyNS42LDI1LjZjNS4yLDAsOS42LTEuNiwxMy42LTRsMi44LDIwLjRjMiwxNC44LDEzLjIsMjUuNiwyNi40LDI1LjYKICAgIGgzNGMxMy4yLDAsMjQuNC0xMC44LDI2LjQtMjUuNmwyLjgtMjAuNGM0LDIuNCw4LjgsNCwxMy42LDRjMTQsMCwyNS42LTExLjYsMjUuNi0yNS42QzMzOS42LDE5OS4yLDMyOCwxODgsMzE0LDE4OHoiCiAgICAvPgogIDwvZz4KPC9zdmc+"
-                alt="TickyBot-image">
+            <img src="./_assets/images/tickybot.svg" alt="TickyBot-image">
         </div>
         <div id="about-bot">
             <h1><span>Ticky</span>Bot</h1>
             <p>Let your team manage their support tickets 100% inside Slack</p>
             <button id="addslacklight">
-                <img id="slacklogo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSI2NSA3MCAxNDUgMTQwIj4KICA8Zz4KICAgIDxwYXRoIGZpbGw9IiNFQ0IzMkQiIGQ9Ik0xNTQuMyw4Ny4xYy0xLjktNS43LTgtOC44LTEzLjctN2MtNS43LDEuOS04LjgsOC03LDEzLjdsMjguMSw4Ni40YzEuOSw1LjMsNy43LDguMywxMy4yLDYuNwogICAgYzUuOC0xLjcsOS4zLTcuOCw3LjQtMTMuNEMxODIuMywxNzMuMywxNTQuMyw4Ny4xLDE1NC4zLDg3LjF6Ii8+CiAgICA8cGF0aCBmaWxsPSIjNjNDMUEwIiBkPSJNMTEwLjgsMTAxLjJjLTEuOS01LjctOC04LjgtMTMuNy03Yy01LjcsMS45LTguOCw4LTcsMTMuN2wyOC4xLDg2LjRjMS45LDUuMyw3LjcsOC4zLDEzLjIsNi43CiAgICBjNS44LTEuNyw5LjMtNy44LDcuNC0xMy40QzEzOC44LDE4Ny40LDExMC44LDEwMS4yLDExMC44LDEwMS4yeiIvPgogICAgPHBhdGggZmlsbD0iI0UwMUE1OSIgZD0iTTE4OS43LDE1OC42YzUuNy0xLjksOC44LTgsNy0xMy43Yy0xLjktNS43LTgtOC44LTEzLjctN2wtODYuNSwyOC4yYy01LjMsMS45LTguMyw3LjctNi43LDEzLjIKICAgIGMxLjcsNS44LDcuOCw5LjMsMTMuNCw3LjRDMTAzLjQsMTg2LjcsMTg5LjcsMTU4LjYsMTg5LjcsMTU4LjZ6Ii8+CiAgICA8cGF0aCBmaWxsPSIjMzMxNDMzIiBkPSJNMTE0LjUsMTgzLjFjNS42LTEuOCwxMi45LTQuMiwyMC43LTYuN2MtMS44LTUuNi00LjItMTIuOS02LjctMjAuN2wtMjAuNyw2LjdMMTE0LjUsMTgzLjF6Ii8+CiAgICA8cGF0aCBmaWxsPSIjRDYyMDI3IiBkPSJNMTU4LjEsMTY4LjljNy44LTIuNSwxNS4xLTQuOSwyMC43LTYuN2MtMS44LTUuNi00LjItMTIuOS02LjctMjAuN2wtMjAuNyw2LjdMMTU4LjEsMTY4Ljl6Ii8+CiAgICA8cGF0aCBmaWxsPSIjODlEM0RGIiBkPSJNMTc1LjUsMTE1LjFjNS43LTEuOSw4LjgtOCw3LTEzLjdjLTEuOS01LjctOC04LjgtMTMuNy03bC04Ni40LDI4LjFjLTUuMywxLjktOC4zLDcuNy02LjcsMTMuMgogICAgYzEuNyw1LjgsNy44LDkuMywxMy40LDcuNEM4OS4zLDE0My4xLDE3NS41LDExNS4xLDE3NS41LDExNS4xeiIvPgogICAgPHBhdGggZmlsbD0iIzI1OEI3NCIgZD0iTTEwMC40LDEzOS41YzUuNi0xLjgsMTIuOS00LjIsMjAuNy02LjdjLTIuNS03LjgtNC45LTE1LjEtNi43LTIwLjdsLTIwLjcsNi43TDEwMC40LDEzOS41eiIvPgogICAgPHBhdGggZmlsbD0iIzgxOUMzQyIgZD0iTTE0My45LDEyNS40YzcuOC0yLjUsMTUuMS00LjksMjAuNy02LjdjLTIuNS03LjgtNC45LTE1LjEtNi43LTIwLjdsLTIwLjcsNi43TDE0My45LDEyNS40eiIvPgogIDwvZz4KPC9zdmc+Cg==" alt="slacklogo">
+                <img id="slacklogo" alt="slacklogoimage" src="./_assets/images/slack.svg">
                 <p>
                     Add to <span>Slack</span>
                 </p>
@@ -39,12 +39,50 @@
     </main>
     <section id="about">
         <h1>What Is <span>Ticky</span>Bot</h1>
-        <p class="firsthalf"> <span>Ticky</span>Bot is a Slack Bot 🤖 that lets you use support tickets on Slack. This way, you don't need to leave your beloved channel to assist your users, if you don't feel like it.</p>
-        <p class="secondhalf">With <span>Ticky</span>Bot you can easily check if you've received new tickets, change their status, or write a reply, and the ticket will instantly update itself on our site.</p>
+        <p class="firsthalf"> <span>Ticky</span>Bot is a Slack Bot 🤖 that lets you use support tickets on Slack. This
+            way, you don't need to leave your beloved channel to assist your users, if you don't feel like it.</p>
+        <p class="secondhalf">With <span>Ticky</span>Bot you can easily check if you've received new tickets, change
+            their status, or write a reply, and the ticket will instantly update itself on our site.</p>
         <p class="full">Support requests shouldn't be handled through Slack's direct messages</p>
-        <em class="fullEm">Image about someone asking silly questions and the workplace admin asking him/her to open a support ticket so other admins could look into the issue.</em>
+        <em class="fullEm">Image about someone asking silly questions and the workplace admin asking him/her to open a
+            support ticket so other admins could look into the issue.</em>
     </section>
-    <section id="features"></section>
+    <section id="features">
+        <h1>How It Works</h1>
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-card-image">
+                    <img src="./_assets/images/workplace.svg" alt="worplace-image">
+                </div>
+                <div class="feature-card-text">
+                    <p>
+                        You can add <span>Ticky</span>Bot to your Slack workplace by scrolling down or <a href="#">clicking here</a>
+                    </p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-image">
+                    <img src="./_assets/images/bubble.svg" alt="bubble-image">
+                </div>
+                <div class="feature-card-text">
+                    <p >
+                        Your users can open a ticket by typing <span class="command">/ticket</span> and their message into the chat field
+                    </p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-image">
+                    <img src="./_assets/images/tasks.svg" alt="tasks-image">
+                </div>
+                <div class="feature-card-text">
+                    <p > 
+                        Once you or another admin solved their problems you can type <span class="command">/ticket</span> <span class="command">close #id</span> to close the
+                        ticke
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="addslack">
         <h1>Start Using <span>Ticky</span>Bot</h1>
         <p><span>Ticky</span>Bot allows Slack teams to manage their support tickets 100% inside Slack, without having to
