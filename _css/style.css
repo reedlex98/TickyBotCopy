@@ -9,6 +9,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    background-color: #fafafa
 }
 
 span {
@@ -88,7 +89,7 @@ ul li a {
 
 #about-bot p {
     font-size: 30px;
-    color: white;
+    color: #fafafa;
     width: 500px;
 }
 
@@ -102,7 +103,7 @@ ul li a {
     justify-content: center;
     border: none;
     border-radius: 5px;
-    background-color: white;
+    background-color: #fafafa;
     color: red;
     text-align: center;
 }
@@ -215,7 +216,7 @@ ul li a {
 }
 
 .feature-card-text {
-    background-color: white;
+    background-color: #fafafa;
     /* flex-basis: 100%; */
     padding: 15px;
 }
@@ -277,13 +278,49 @@ ul li a {
 #addslackdark p{
     width:50%;
     font-size: 1em;
-    color: white; 
+    color: #fafafa; 
 }
 
 #addslackdark:hover {
     background-color: rgba(30, 30, 30, 0.8)
 }
 
-
-
 /* End of the addslack section of the page *
+
+/* Editing the style of footer  */
+
+footer{
+    margin-top: 25px;
+    text-align: center;
+    background-color: #40596b;
+    height: 100%;
+    padding: 5px 0;
+    color: hsla(0,0%,100%,.75);
+    line-height: 10px;
+}
+footer a{
+    color: hsla(0,0%,100%,.75);
+}
+
+/* End of the footer */
+
+/* Top button style */
+    .top{
+        position: fixed;
+        bottom:20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        padding:10px;
+        background-color: #ffd05a;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 0px #909090;
+    }
+    /* .top:hover{
+        cursor: pointer;
+    } */
+    .top img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+/* End of top button style */
